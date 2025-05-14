@@ -13,7 +13,7 @@ function OnCombatButtonClick()
 function OnDownloadLinkClicked()
 {
   var link = document.createElement("a");
-  link.href = "https://kbaxstudio.github.io/Desyncropath-Setup/downloads/GameSetup/Desyncropath_WindowsSetup_(x64).exe";
+  link.href = "downloads/GameSetup/Desyncropath_WindowsSetup_(x64).exe";
   link.download = "Desyncropath_WindowsSetup_(x64).exe"
 
   document.body.appendChild(link);
