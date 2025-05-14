@@ -1,0 +1,525 @@
+@font-face {
+    font-family: "xilosa";
+    src: url(/assets/fonts/xilosa/xilosa_.ttf);
+}
+
+@font-face {
+  font-family: "sineria";
+  src: url(/assets/fonts/sinera/Sinera.ttf);
+}
+
+@font-face {
+  font-family: "megloria";
+  src: url(/assets/fonts/megloria/MEGLORIA.ttf);
+}
+
+@font-face {
+  font-family: "cracked_code";
+  src: url(/assets/fonts/cracked_code/Cracked\ Code.ttf);
+}
+
+body
+{
+    margin: 0;
+    background-color: black;
+}
+
+h1,h2.h3,h4,h5,h6
+{
+    margin: 0;
+}
+
+.hero
+{
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+}
+
+.hero video
+{
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.hero .title
+{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 5vw;
+}
+
+.hero .subtitle
+{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 1vw;
+}
+
+.hero .mainClaim
+{
+    font-family: "sineria", system-ui;
+    color: #e4934c;
+    text-shadow:
+    -5px 5px 2px rgb(0, 0, 0),
+    0 0 1em rgb(0, 0, 0),
+    0 0 0.2em #e4934c;
+    font-size: clamp(1rem, 12vw, 20rem);
+    letter-spacing: -0.02em;
+    line-height: 1em;
+
+}
+
+.hero .secondClaim
+{
+    font-family: "sineria", system-ui;
+    color: #e4934c;
+    text-shadow:
+    -5px 5px 2px rgb(0, 0, 0),
+    0 0 1em rgb(0, 0, 0),
+    0 0 0.2em #e4934c;
+    font-size: clamp(1rem, 6vw, 20rem);
+    letter-spacing: -0.02em;
+    line-height: 1em;
+}
+
+.downloads
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    cursor: pointer;
+    aspect-ratio: 18;
+}
+
+.hero .image
+{
+    object-fit: cover;
+}
+
+section
+{
+    width: 100vw;
+    height: 50vh;
+}
+
+.welcome
+{
+    background: linear-gradient(328deg, rgba(201,200,49,1) 0%, rgba(235,195,50,1) 50%, rgba(187,135,39,1) 100%);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.welcome .npc
+{
+    background-image: url("/img/Aleixandre.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.welocme .title
+{
+    width: 60vw;
+}
+
+.welocme .subtitle
+{
+    width: 40vw;
+
+}
+
+.welcome .mainWelcome
+{
+    font-family: "sineria", system-ui;
+    font-size: clamp(1rem, 6vw, 20rem);
+    text-align: center;
+}
+
+.welcome .secondWelcome
+{
+    font-family: "sineria", system-ui;
+    font-size: clamp(1rem, 3vw, 20rem);
+    text-align: center;
+}
+
+.showing
+{
+    background: #542B29;
+    background: linear-gradient(360deg,rgba(84, 43, 41, 1) 0%, rgba(124, 20, 44, 1) 50%, rgba(156, 107, 101, 1) 100%);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.preview
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoContainer
+{
+  position: relative;
+  height: 50vh;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.videoMechanics
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.showing .buttons
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    justify-items: center;
+}
+
+.button-error,
+.button-error:after {
+  width: 200px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #b89113 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #f6a000;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-error:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'I SEE YOU';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #f68300;
+  clip-path: var(--slice-0);
+}
+
+.button-error:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-error,
+  .button-error:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+    font-family: "sineria", system-ui;
+  }
+}
+
+.charactersSection
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.charactersImageContainer
+{
+  height: 60vh;
+}
+
+.characterImage
+{
+  height: 100%;
+}
+
+.characterTextContainer
+{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.characterTextContainer h1
+{
+  font-size: clamp(1rem, 4vw, 20rem);
+}
+
+.characterTextContainer h2
+{
+  font-size: clamp(1rem, 2vw, 20rem);
+}
+
+.gameplayContainer
+{
+  font-family: "sineria", system-ui;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  background-color: #f68300;
+}
+
+.gameplayVideoContainer
+{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameplayContainer video
+{
+  width: 50vw;
+  border-radius: 10px;
+}
+
+.gameplayTextContainer
+{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4vw;
+  text-align: right;
+  justify-content: center;
+}
+
+.gameplayTextContainer h1
+{
+  font-size: clamp(1rem, 4vw, 20rem);
+}
+
+.gameplayTextContainer h2
+{
+  font-size: clamp(1rem, 3vw, 20rem);
+}
+
+.mechanics
+{
+    background-color: black;
+    display: flex;
+    height: 60vh;
+}
+
+.column
+{
+    flex: 33.33%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "sineria", system-ui;
+}
+
+.mechanics h2
+{
+  font-family: "xilosa", system-ui;
+  color: white;
+  text-align: justify;
+  font-size: clamp(1rem, 8vw, 1.5rem);
+}
+
+.about-us {
+  font-family: 'sineria', system-ui;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #330606;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.aboutUsContainer {
+  padding: 10px;
+  color: white;
+}
+
+.aboutUsImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.splide
+{
+  pointer-events: none;
+}
+
+.splide__arrows
+{
+  pointer-events: auto;
+}
+
+.gameClaimContainer
+{
+  height: 100vh;
+  font-family: "cracked_code", system-ui;
+  color: white;
+  background-image: url("/img/Desyncropath_Logo_1.png");
+  background-size: cover;
+  display: grid;
+  grid-column: 1;
+  text-align: center;
+}
+
+.gameClaimContainer h1
+{
+  font-size: clamp(1rem, 5vw, 20rem);
+  text-shadow:
+  -5px 5px 2px rgb(0, 0, 0),
+  0 0 1em blue,
+  0 0 0.2em blue;
+}
+
+.gameClaimContainer h2
+{
+  font-size: clamp(1rem, 3vw, 20rem);
+  text-shadow:
+  -5px 5px 2px rgb(0, 0, 0),
+  0 0 1em blue,
+  0 0 0.2em blue;
+}
+
+.bottom
+{
+    background: #542B29;
+    background: linear-gradient(0deg,rgba(84, 43, 41, 1) 0%, rgba(124, 20, 44, 1) 100%);
+    display: flex;
+    height: 20vh;
+}
+
+.updates
+{
+  display: flex;
+  flex: 50%;
+  padding-right: 20px;
+}
+
+.updates h1
+{
+  font-size: clamp(1rem, 3vw, 3rem);
+  font-family: "sineria", system-ui;
+  padding-left: 30px;
+  color: white;
+}
+
+.updates h2
+{
+  font-size: clamp(1rem, 1vw, 1rem);
+  font-family: "sineria", system-ui;
+  padding-left: 35px;
+  color: white;
+}
+
+.updatesNow
+{
+  flex: 30%;
+}
+
+.updatesNext
+{
+  flex: 30%;
+}
+
+.socialMedia
+{
+  justify-content: center;
+  cursor: pointer;
+}

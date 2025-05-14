@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--INICIO DEL HERO-->
+    <div class="hero">
+        <video loop mute autoplay src="videos/Combate_Exploracion_Desyncropath.mp4"></video>
+
+        <div class="title">
+            <h1 class="mainClaim">
+                Desyncropath KbaxStudio
+            </h1>
+        </div>
+
+        <div class="subtitle">
+            <h2 class="secondClaim">
+                El RPG que fusiona 2D y 3D
+            </h2>
+        </div>
+
+        <div class="downloads">
+            <img onclick="OnDownloadLinkClicked()" src="img/DirectDownload_BackgroundWhite.png" width="20%">
+        </div>
+    </div>
+    <!--FIN DEL HERO-->
+
+    <!--INICIO DEL WELCOME-->
+    <div class="welcome">
+        <div>
+            <div class="title">
+                <h1 class="mainWelcome">
+                    WELCOME TO DESYNCROPATH
+                </h1>
+            </div>
+            <div class="subtitle">
+                <h2 class="secondWelcome">
+                    I'M YOUR HELPER, ALEIXANDRE
+                </h2>
+            </div>
+        </div>
+        
+        <div class="npc"></div>
+    </div>
+    <!--FIN DEL WELCOME-->
+
+    <!--INICIO DEL SHOWING-->
+    <div class="showing">
+        <div class="buttons">
+            <div>
+                <button onclick="OnExplorationButtonClick()" class="button-error" role="button">Exploration</button>
+            </div>
+
+            <div>
+                <button onclick="OnCombatButtonClick()" class="button-error" role="button">Combat</button>
+            </div>
+        </div>
+        <div class="preview">
+            <div class="videoContainer">
+                <video id="videoMechanicsId" class="videoMechanics" loop muted autoplay src="videos/Exploracion_Desyncropath_Recortado.mp4"></video>
+            </div>
+        </div>
+    </div>
+    <!--FIN DEL HERO-->
+
+    <!--INICIO DEL CHARACTERS SECTION-->
+    <section class="splide" aria-label="Splide Basic HTML Example" style="height: 60vh;">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="charactersSection" style="background: linear-gradient(90deg,rgba(125, 82, 45, 1) 0%, rgba(228, 147, 76, 1) 50%, rgba(125, 82, 45, 1) 100%);">
+                        <div class="charactersImageContainer">
+                            <img class="characterImage" src="img/DestinyProfile.png">
+                        </div>
+                        <div class="characterTextContainer">
+                            <div>
+                                <h1>"¡Mis puños hablan más rápido que tus palabras!"</h1>
+                            </div>
+                            <div>
+                                <h2>Destiny, una luchadora de los bajos occidentales</h2>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="charactersSection" style="background: linear-gradient(90deg,rgba(125, 82, 45, 1) 0%, rgba(228, 147, 76, 1) 50%, rgba(125, 82, 45, 1) 100%);">
+                        <div class="charactersImageContainer">
+                            <img class="characterImage" src="img/FelProfile.png">
+                        </div>
+                        <div class="characterTextContainer">
+                            <div>
+                                <h1>"Mi escudo es el limite que marca tu poder"</h1>
+                            </div>
+                            <div>
+                                <h2>Fel'Mijah, ex-militar de la división F.I.H. experto en defensa fronteriza</h2>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="charactersSection" style="background: linear-gradient(90deg,rgba(125, 82, 45, 1) 0%, rgba(228, 147, 76, 1) 50%, rgba(125, 82, 45, 1) 100%);">
+                        <div class="charactersImageContainer">
+                            <img class="characterImage" src="img/MageProfile.png">
+                        </div>
+                        <div class="characterTextContainer">
+                            <div>
+                                <h1>"En cada palabra que pronuncio, arde una chispa del antiguo saber..."</h1>
+                            </div>
+                            <div>
+                                <h2>Jeremiah, el último sabio de su era</h2>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+    <!--FIN DEL CHARACTERS SECTION-->
+
+    <!--INICIO DEL GAMEPLAY-->
+    <div class="gameplayContainer">
+        <div class="gameplayVideoContainer">
+            <video loop muted autoplay src="videos/Exploracion_Desyncropath.mp4"></video>
+        </div>
+        <div class="gameplayTextContainer">
+            <div>
+                <h1>Tanto exploración como combate RPG</h1>
+            </div>
+            <div>
+                <h2>Animate a jugar!!!</h2>
+            </div>
+        </div>
+    </div>
+    <!--FIN DEL GAMEPLAY-->
+
+    <!--INICIO DEL MECHANICS-->
+    <div class="mechanics">
+        <div class="column">
+            <h1 style="color: white; padding-top: 5%;">Historia</h1>
+            <img src="img/historia.png" style="width: 100%;">
+            <h2>Disfruta de una nueva y entretenida historia en Desyncropath. Donde nuestros heroes llegarán a un desconocido mundo para liberarlo del mal.</h2>
+        </div>
+        <div class="column">
+            <h1 style="color: white; padding-top: 5%;">Exploración</h1>
+            <img src="img/exploring.png" style="width: 100%;">
+            <h2>Explora el reino de NOMBRE, su vejetación, habitantes y edificios. Mas ten cuidado, los enemigos pueden atacarte cuando menos te lo esperas</h2>
+        </div>
+        <div class="column">
+            <h1 style="color: white; padding-top: 5%;">Combate</h1>
+            <img src="img/combate.png" style="width: 100%;">
+            <h2>Derrota a los invasores en un clasico sistema de combates por turnos en los que se pondra a prueba tu estrategia</h2>
+        </div>
+    </div>
+    <!--FIN DEL MECHANICS-->
+
+    <!-- INICIO DE IMAGENES NOSOTROS -->
+
+    <div class="about-us">
+        <div class="aboutUsContainer">
+          <img src="img/FotoJose.png" alt="Part 1 image" class="aboutUsImage">
+          <h1>Jose Luis Ruiz</h1>
+          <p>Developer and Designer</p>
+        </div>
+        <div class="aboutUsContainer">
+          <img src="img/FotoXin.png" alt="Part 2 image" class="aboutUsImage">
+          <h1>Xinhao Zheng</h1>
+          <p>CEO de la Empresa</p>
+        </div>
+        <div class="aboutUsContainer">
+          <img src="img/FotoManu.png" alt="Part 3 image" class="aboutUsImage">
+          <h1>Manuel Leones</h1>
+          <p>Game Designer and Level Desginer</p>
+        </div>
+        <div class="aboutUsContainer">
+          <img src="img/maxwell.png" alt="Part 4 image" class="aboutUsImage">
+          <h1>Stupid Cat</h1>
+          <p>Just a Stupid Cat</p>
+        </div>
+      </div>
+
+
+    <!-- FIN DE IMAGENES NOSOTROS -->
+
+    <!--INICIO CLAIM-->
+    <div class="gameClaimContainer">
+        <h1>¡DESCARGALO YA!</h1>
+        <h2>DISPONIBLE EN</h2>
+        <div class="downloads">
+            <img onclick="OnGithubDownloadLinkClicked()" src="img/GithubLogo_BackgroundWhite.png" width="20%">
+            <img onclick="OnItchioDownloadLinkClicked()" src="img/ItchioLogo_BackgroundWhite.png" width="20%">
+        </div>
+    </div>
+    <!--FIN CLAIM-->
+
+    <!--INICIO UPDATES-->
+    <div class="bottom">
+        <div class="updates">
+            <div class="updatesNow">
+                <h1>Actual Version</h1>
+                <h2>1.0 Game is playable</h2>
+            </div>
+
+            <div class="updatesNext">
+                <h1>Next Updates</h1>
+                <h2>1.0.1 Fixed errors</h2>
+            </div>
+        </div>
+
+        <div class="socialMedia">
+            <img onclick="OnInstagramDownloadLinkClicked()" src="img/insta.png" width="20%">
+        </div>
+    </div>
+    <!--FIN UPDATES-->
+
+    <!--JAVA SCRIPT-->
+    <script src="js/style.js"></script>
+    <script src="library/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+</body>
+</html>
