@@ -1,21 +1,21 @@
 @font-face {
     font-family: "xilosa";
-    src: url(/assets/fonts/xilosa/xilosa_.ttf);
+    src: url(../assets/fonts/xilosa/xilosa_.ttf);
 }
 
 @font-face {
   font-family: "sineria";
-  src: url(/assets/fonts/sinera/Sinera.ttf);
+  src: url(../assets/fonts/sinera/Sinera.ttf);
 }
 
 @font-face {
   font-family: "megloria";
-  src: url(/assets/fonts/megloria/MEGLORIA.ttf);
+  src: url(../assets/fonts/megloria/MEGLORIA.ttf);
 }
 
 @font-face {
   font-family: "cracked_code";
-  src: url(/assets/fonts/cracked_code/Cracked\ Code.ttf);
+  src: url(../assets/fonts/cracked_code/Cracked\ Code.ttf);
 }
 
 body
@@ -126,7 +126,7 @@ section
 
 .welcome .npc
 {
-    background-image: url("/img/Aleixandre.png");
+    background-image: url("../img/Aleixandre.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -452,7 +452,7 @@ section
   height: 100vh;
   font-family: "cracked_code", system-ui;
   color: white;
-  background-image: url("/img/Desyncropath_Logo_1.png");
+  background-image: url("../img/Desyncropath_Logo_1.png");
   background-size: cover;
   display: grid;
   grid-column: 1;
